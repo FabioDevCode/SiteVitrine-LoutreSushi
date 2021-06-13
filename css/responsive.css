@@ -1,0 +1,415 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    --color-noir: #001011;
+    --color-rouge: #d64045;
+    --color-gris: #ecf0f1;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+    color: black;
+    min-width: 375px;
+}
+
+.blacmax {
+    max-width: 1440px;
+}
+
+h3 {
+    color: var(--color-rouge);
+    font-size: 1.5em;
+    margin: 20px auto;
+}
+
+.blocmaxmain {
+    width: 100%;
+    max-width: 1440px;
+}
+
+p {
+    font-size: .95em;
+}
+
+/* -------------- Header -------------- */ 
+
+/* Bloc logo + titre */
+header {
+    z-index: 1000;
+    position: sticky;
+    width: 100vw;
+    height: 140px;
+    background-color: var(--color-noir);
+}
+
+header .blocmax {
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bloclogo {
+    background-color: var(--color-noir);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+#bloclogo img {
+    filter: invert(100%);
+    height: 80px;
+}
+
+#bloclogo h1 {
+    color: white;
+    font-size: 1.5em;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--color-noir);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 25%;
+
+}
+
+nav ul li a {
+    font-size: .8em;
+    color: white;
+}
+
+li:hover {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+/* -------------- Heroban -------------- */ 
+
+#heroban {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heroban img {
+    position: absolute;
+    min-width: 375px;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+#heroban h2 {
+    position: absolute;
+    color: white;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    text-align: center;
+    font-size: 50px;
+    width: 362px;
+    margin-bottom: -70px;
+}
+
+/* -------------- PHILOSOPHIE -------------- */ 
+
+#philosophie {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+
+.imagechef {
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.imagechef img {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.textephilo {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* -------------- CARTE -------------- */ 
+
+#carte {
+    background-color: var(--color-gris);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu {
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.15em;
+}
+
+.lesplats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.lesplats img {
+    width: 380px;
+    margin-top: 15px;
+}
+
+.lesplats div {
+    font-size: .95em;
+    margin-top: 28px;
+    
+}
+
+/* -------------- Image de transition -------------- */
+
+.imagetransition {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-gris);
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+.imagetransition img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* -------------- Infos Pratique -------------- */
+
+#info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+#info .blocmaxmain {
+    display: flex;
+    flex-direction: column;
+}
+
+.blocinfo {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.blocinfo h4 {
+    align-self: center;
+    margin-top: 40px;
+}
+
+.traitrouge {
+    align-self: center;
+    height: 5px;
+    background-color: var(--color-rouge);
+    margin-bottom: 35px;
+    width: 30%;
+    max-width: 100px;
+}
+
+.text1, .text2 {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.text1 span {
+    font-weight: 600;
+}
+    
+iframe {
+    border: 0;
+    border-radius: 20px;
+    width: 360px;
+    height: 250px;
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+
+/* -------------- Nous Contacter -------------- */
+
+#contact {
+    width: 100%;
+    background-color: var(--color-gris);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulaire {
+    padding-top: 50px;
+    margin: 0 auto;
+    height: 700px;
+    width: 90%;
+    max-width: 720px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire > form > input {
+    color: var(--color-rouge);
+    padding-left: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    border: 2px solid var(--color-rouge);
+
+}
+
+.formulaire > form > textarea {
+    color: var(--color-rouge);
+    padding-left: 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 50px;
+    border-radius: 15px;
+    border: 2px solid var(--color-rouge);
+
+}
+
+.formulaire > form > p.titlef {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.formulaire > form > button {
+    height: 50px;
+    width: 175px;
+    border-radius: 25px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    background-color: #D64045;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+}
+
+input:focus, 
+textarea:focus {
+  outline: none;
+  box-shadow: 0px 0px 20px rgba(214, 64, 69, 0.7);
+}
+
+button:hover {
+  box-shadow: 0px 0px 20px rgba(214, 64, 69, 0.7);
+  transform: scale(1.1);
+}
+
+/* -------------- FOOTER -------------- */
+
+footer div {
+    display: flex;
+    width: 100%;
+    background-color: #001011;
+    color: white;
+    height: 80px;
+}
+
+footer div div {
+    justify-content: center;
+    align-items: center;
+}
+
+footer div div img {
+    height: 10px;
+    margin-right: 6px;
+}
+    
+    
