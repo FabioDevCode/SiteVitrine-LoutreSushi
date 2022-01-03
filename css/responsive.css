@@ -376,7 +376,7 @@ form {
 
 .formulaire > form > input {
     color: var(--color-rouge);
-    padding-left: 15px;
+    padding: 0 15px;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     width: 100%;
@@ -388,7 +388,7 @@ form {
 
 .formulaire > form > textarea {
     color: var(--color-rouge);
-    padding-left: 15px;
+    padding: 5px 15px;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     width: 100%;
